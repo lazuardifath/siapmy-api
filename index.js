@@ -34,7 +34,7 @@ app.use((error, req, res, next) => {
      res.status(status).json({message: message, data: data});
 });
 
-mongoose.connect("mongodb+srv://siapmy1:Siapmy12!@siapmy1.wjizrn5.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://siapmy1:Siapmy12!@siapmy1.wjizrn5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 .then(() => {
      app.listen(process.env.PORT || 4000, () => console.log("Connection success"));
 })
